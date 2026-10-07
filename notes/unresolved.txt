@@ -1,0 +1,22 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+LinkedWithCnt | tennis.so
+WhoWeArePlaying | tennis.so
+GetPackets(char*, int) | tennis.so
+BitmapConvPal(_RADBitmap*, _RADBitmap*, unsigned char) | tennis.so
+BitmapTextTTF(_RADBitmap*, char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | tennis.so
+BitmapColorize(_RADBitmap*, int, int, int, int) | tennis.so
+BitmapGetPixel(_RADBitmap*, unsigned long, unsigned long) | tennis.so
+SendPilePacket(char*, int) | tennis.so
+InFormOfIDUsage(unsigned char, unsigned char) | tennis.so
+ProcessRTPackets() | tennis.so
+BitmapRectToScreen(_RADBitmap*, unsigned long, unsigned long, unsigned long, unsigned long) | tennis.so
+MouseX() | tennis.so
+MouseY() | tennis.so
+GetMyId() | tennis.so
+PlayWave(char*, unsigned short, int, int, int, bool) | tennis.so
+GetMaster() | tennis.so
+ContinueControl::display(unsigned int, unsigned int, bool (*)()) | tennis.so
+Bitmap::CreateColoredTextBoxTTFS(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | tennis.so
